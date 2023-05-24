@@ -1,6 +1,6 @@
-#ALX Simple Shell Team Project
+# ALX Simple Shell Team Project
 This is an ALX collaboration project on Shell.
-##files
+## files
 OurShell.c
 aya.h
 command_devide.c
@@ -11,7 +11,7 @@ get_path.c
 prompt.c
 strf.c
 strf2.c
-##General
+## General
 Who designed and implemented the original Unix operating system
 Who wrote the first version of the UNIX shell
 Who invented the B programming language (the direct predecessor to the C programming language)

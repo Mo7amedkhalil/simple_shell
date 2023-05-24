@@ -8,7 +8,8 @@
 void prompt(void)
 {
 	if (!isatty(0))
-	{                                                                  get_cmd();
+	{
+		get_cmd();
 		return;
 	}
 	while (1)

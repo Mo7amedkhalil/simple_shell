@@ -9,7 +9,7 @@ void get_cmd(void)
 {
 	char *text = NULL;
 	size_t _buffs = 0;
-	int _bufflen, child_pid, st;
+	int _bufflen, child_pid, sT;
 
 	_bufflen = getline(&text, &_buffs, stdin);
 	if (_bufflen == -1)
@@ -42,7 +42,7 @@ void get_cmd(void)
 			command_devide(text);
 		else
 		{
-			wait(&st);
+			wait(&sT);
 			free(text);
 		}
 	}

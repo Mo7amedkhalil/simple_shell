@@ -9,10 +9,11 @@
 void command_devide(char *text)
 {
 	char **cmd, *wd, *slice = NULL, *delim = " \t\n";
-	int i = 0, exe_res, cmd_wd = 0;
+	int i, exe_res, cmd_wd = 0;
 
 	cmd = malloc(sizeof(char *) * (count_words(text) + 1));
 	wd = strtok(text, delim);
+	i = 0;
 	while (wd != NULL)
 	{
 		slice = malloc(_strlen(wd) + 1);

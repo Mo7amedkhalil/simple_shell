@@ -1,4 +1,4 @@
-#include "aya.h"	
+#include "aya.h"
 
 /**
  * exec - executes the cmd

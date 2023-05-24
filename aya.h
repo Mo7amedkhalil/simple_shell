@@ -28,7 +28,7 @@ char *erase_initials(char *str, int n);
 char *concatenate(char *s1, char *s2);
 int _strlen(char *str);
 int compare_chars(char *s1, char *s2, int chars_compared);
-void ctrl(int i);
+void ctrl(int sig);
 int _putchar(char c);
 char *_strcpy(char *dest, char *src);
 int count_words(char *text);

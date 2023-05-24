@@ -3,17 +3,17 @@
 /**
  * get_path - gets the path
  * @command: the cmd
- * Rerurn:: full path
+ * Return: the full path, or NULL
  */
 
 char *get_path(char *command)
 {
-	int i;
+	int i = 0;
 	struct stat st;
 	char **_pathcmd;
 
 	_pathcmd = pathform(command);
-	for (i = 0; _pathcmd[i] != NULL; i++)
+	for (; _pathcmd[i] != NULL; i++)
 	{
 		if (stat(_pathcmd[i], &st) == 0)
 			return (_pathcmd[i]);

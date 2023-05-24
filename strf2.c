@@ -58,9 +58,9 @@ int count_words(char *text)
  */
 void _prints(char **strings)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; strings[i]; i++)
+	for (; strings[i]; i++)
 	{
 		write_string(strings[i]);
 		_putchar('\n');
@@ -68,7 +68,7 @@ void _prints(char **strings)
 }
 
 /**
- * free_strings - frees strings array
+ * free_str - frees strings array
  * @strings: strings array
  * @n: num of char
  * Return: Success

@@ -1,6 +1,6 @@
 #include "aya.h"
 
-/*
+/**
  * compare_chars - compares to strings
  * @s1: first string
  * @s2: second string

@@ -1,4 +1,4 @@
-#include "aya.h"
+#include "aya.h"	
 
 /**
  * exec - executes the cmd
@@ -12,7 +12,7 @@ int exec(char **command)
 
 	if (access(command[0], F_OK) == 0)
 	{
-		if (execve(command[0], command, environ))
+		if (execve(command[0], command, environ) == -1)
 		{
 			write_string(file_name);
 			return (-1);
